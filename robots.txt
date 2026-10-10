@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap URL (Replace with your custom domain or GitHub Pages URL)
+Sitemap: https://ananyar2006.github.io/sitemap.xml
