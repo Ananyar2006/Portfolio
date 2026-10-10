@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Dynamic base path: '/' for Vercel, '/Portfolio/' for GitHub Pages
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio/', // Configured for GitHub Pages subpath: https://ananyar2006.github.io/Portfolio/
+  base: process.env.VERCEL ? '/' : '/Portfolio/',
   build: {
     outDir: 'dist',
     sourcemap: false,
